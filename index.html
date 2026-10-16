@@ -1,0 +1,30 @@
+```Severin
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code César</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Code César</h1>
+    <p>Chiffre ou déchiffre ton message secret.</p>
+
+    <label for="message">Ton message :</label>
+    <textarea id="message" placeholder="Écris ton message ici..."></textarea>
+
+    <label for="decalage">Décalage :</label>
+    <input type="number" id="decalage" value="3" />
+
+    <div>
+      <button onclick="chiffrer()">Chiffrer</button>
+      <button onclick="dechiffrer()">Déchiffrer</button>
+    </div>
+
+    <h2>Résultat</h2>
+    <p id="resultat"></p>
+  </body>
+</html>
